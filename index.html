@@ -1,1 +1,132 @@
-Hello World
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Currículum</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .info div {
+            flex: 1;
+            padding: 10px;
+            margin: 0 5px;
+            background-color: #f0f0f0;
+            border-radius: 6px;
+        }
+
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .info {
+                flex-direction: column;
+            }
+
+            .profile-pic {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mi Currículum</h1>
+    </header>
+
+    <section>
+        <div style="text-align: center;">
+            <img class="profile-pic" src="https://i.pinimg.com/736x/0c/60/4c/0c604c218c75cc06882f13431677ea25.jpg" alt="Foto de perfil">
+        </div>
+    </section>
+
+    <section>
+        <h2>Datos Personales</h2>
+        <div class="info">
+            <div>
+                <h3>Nombre</h3>
+                <p>Jonathan Jacinto</p>
+            </div>
+            <div>
+                <h3>Correo Electrónico</h3>
+                <p>Jonathan@gmail.com</p>
+            </div>
+            <div>
+                <h3>Teléfono</h3>
+                <p>(502) 1234-1234</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Experiencia Laboral</h2>
+        <div>
+            <h3>Aprendiz Desarrollador Web</h3>
+            <p>Actualmente tengo 20 años y me encuentro cursando el Técnico en Desarrollo de Softwar en la Universidad Galileo</p>
+            <p>Virtudes personales:</p>
+            <ul>
+                <li>Creatividad y pensamiento crítico</li>
+                <li>Respondable y aprendizaje rápido</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Otro Trabajo</h3>
+            <p>Otra Empresa | Fecha de inicio - Fecha de fin</p>
+            <ul>
+                <li>Alorica | Mayo, 2023 - Septiembre, 2023</li>
+                <li>Telus International | Diciembre, 2023 - Septiembre, 2024</li>
+                <li>Conduent | Enero, 2025 - Actualmente activo</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Educación</h2>
+        <div>
+            <h3>Grado Académico</h3>
+            <p>Nombre de la institución y Título obtenido | Fecha de inicio - Fecha de fin</p>
+                <li>Liceo Javier, Bachiller en Ciencias y Letras | Año 2018 - Año 2022</li>
+                <li>E4CC, Bilingüe Ingles - Español | Enero, 2023 - Mayo 2023</li>
+        </div>
+    </section>
+</body>
+</html>
